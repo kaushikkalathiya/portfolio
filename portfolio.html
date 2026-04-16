@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaushik Kalathiya - WordPress Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="pt-16">
+
+<nav class="bg-slate-900/80 backdrop-blur-md fixed w-full z-50 top-0 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+            <div class="flex items-center">
+                <a href="index.html" class="text-2xl font-bold text-blue-500 hover:text-blue-400 transition">&lt;Kaushik.Kalathiya/&gt;</a>
+            </div>
+            <div class="hidden md:block">
+                <div class="ml-10 flex items-baseline space-x-8">
+                    <a href="index.html" class="hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium transition">Home</a>
+                    <a href="about.html" class="hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium transition">About</a>
+                    <a href="portfolio.html" class="hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium transition">Portfolio</a>
+                    <a href="contact.html" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md text-sm font-medium transition">Hire Me</a>
+                </div>
+            </div>
+            <div class="-mr-2 flex md:hidden">
+                <button type="button" id="menu-btn" class="inline-flex items-center justify-center p-2 rounded-md text-slate-400 hover:text-white hover:bg-slate-800 focus:outline-none">
+                    <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="md:hidden hidden bg-slate-900 pb-3 pt-2" id="mobile-menu">
+        <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-slate-800">Home</a>
+        <a href="about.html" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-slate-800">About</a>
+        <a href="portfolio.html" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-slate-800">Portfolio</a>
+        <a href="contact.html" class="block px-3 py-2 rounded-md text-base font-medium text-blue-500 hover:bg-slate-800">Hire Me</a>
+    </div>
+</nav>
+
+<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+    <div class="fade-in-up mb-16 text-center">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">Featured Projects</h1>
+        <p class="text-slate-400 max-w-2xl mx-auto">A selection of my custom WordPress builds. Click on any project to explore detailed information, including its requirements, architecture, and the solutions implemented.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Project 1 -->
+        <a href="portfolio-fameshop.html" class="group block bg-slate-900 border border-slate-800 rounded-xl overflow-hidden hover:border-blue-500 transition fade-in-up">
+            <div class="relative h-48 overflow-hidden">
+                <img src="images/fameshop.png" alt="Fameshop" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                <div class="absolute inset-0 bg-blue-900/20 group-hover:bg-transparent transition duration-500"></div>
+            </div>
+            <div class="p-6">
+                <div class="flex justify-between items-center mb-3">
+                    <span class="text-xs font-semibold text-purple-400 uppercase tracking-wider">WooCommerce</span>
+                    <span class="text-xs text-slate-500">2026</span>
+                </div>
+                <h3 class="text-xl font-bold mb-2 group-hover:text-blue-400 transition">Fameshop</h3>
+                <p class="text-slate-400 text-sm mb-4">Website providing services for buying TikTok followers, likes, views, and shares with integrated payment system.</p>
+                <span class="text-blue-500 text-sm font-medium flex items-center">View Case Study <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg></span>
+            </div>
+        </a>
+
+        <!-- Project 2 -->
+        <a href="portfolio-gerum-daginn-girnilegan.html" class="group block bg-slate-900 border border-slate-800 rounded-xl overflow-hidden hover:border-blue-500 transition fade-in-up" style="transition-delay: 100ms;">
+            <div class="relative h-48 overflow-hidden">
+                <img src="images/gerumdaginngirnilegan.png" alt="Gerum Daginn Girnilegan" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+            </div>
+            <div class="p-6">
+                <div class="flex justify-between items-center mb-3">
+                    <span class="text-xs font-semibold text-emerald-400 uppercase tracking-wider">WordPress</span>
+                </div>
+                <h3 class="text-xl font-bold mb-2 group-hover:text-blue-400 transition">Gerum Daginn Girnilegan</h3>
+                <p class="text-slate-400 text-sm mb-4">Recipe website offering interesting recipes that everyone can cook in the kitchen.</p>
+                <span class="text-blue-500 text-sm font-medium flex items-center">View Case Study <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg></span>
+            </div>
+        </a>
+
+        <!-- Project 3 -->
+        <a href="portfolio-ket4sme.html" class="group block bg-slate-900 border border-slate-800 rounded-xl overflow-hidden hover:border-blue-500 transition fade-in-up" style="transition-delay: 200ms;">
+            <div class="relative h-48 overflow-hidden">
+                <img src="images/KET4SME.png" alt="KET4SME" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+            </div>
+            <div class="p-6">
+                <div class="flex justify-between items-center mb-3">
+                    <span class="text-xs font-semibold text-blue-400 uppercase tracking-wider">WordPress</span>
+                </div>
+                <h3 class="text-xl font-bold mb-2 group-hover:text-blue-400 transition">KET4SME</h3>
+                <p class="text-slate-400 text-sm mb-4">Custom plugin for registering small businesses and facilitating help through custom search forms.</p>
+                <span class="text-blue-500 text-sm font-medium flex items-center">View Case Study <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg></span>
+            </div>
+        </a>
+
+        <!-- Project 4 -->
+        <a href="portfolio-package-ai.html" class="group block bg-slate-900 border border-slate-800 rounded-xl overflow-hidden hover:border-blue-500 transition fade-in-up" style="transition-delay: 300ms;">
+            <div class="relative h-48 overflow-hidden">
+                <img src="images/package-ai.png" alt="Package AI" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+            </div>
+            <div class="p-6">
+                <div class="flex justify-between items-center mb-3">
+                    <span class="text-xs font-semibold text-rose-400 uppercase tracking-wider">WordPress</span>
+                </div>
+                <h3 class="text-xl font-bold mb-2 group-hover:text-blue-400 transition">Package AI</h3>
+                <p class="text-slate-400 text-sm mb-4">Bootstrap-based custom theme with dynamic back-end modules for easy content editing.</p>
+                <span class="text-blue-500 text-sm font-medium flex items-center">View Case Study <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg></span>
+            </div>
+        </a>
+
+        <!-- Project 5 -->
+        <a href="portfolio-i-doctor.html" class="group block bg-slate-900 border border-slate-800 rounded-xl overflow-hidden hover:border-blue-500 transition fade-in-up" style="transition-delay: 400ms;">
+            <div class="relative h-48 overflow-hidden">
+                <img src="images/i-doctor.png" alt="i-Doctor" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+            </div>
+            <div class="p-6">
+                <div class="flex justify-between items-center mb-3">
+                    <span class="text-xs font-semibold text-cyan-400 uppercase tracking-wider">WordPress</span>
+                </div>
+                <h3 class="text-xl font-bold mb-2 group-hover:text-blue-400 transition">i-Doctor</h3>
+                <p class="text-slate-400 text-sm mb-4">Specialized eye care website offering laser eye surgery and consultation booking services.</p>
+                <span class="text-blue-500 text-sm font-medium flex items-center">View Case Study <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg></span>
+            </div>
+        </a>
+    </div>
+</main>
+
+<footer class="bg-slate-900 border-t border-slate-800 py-10">
+    <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+        <div class="flex space-x-4">
+            <a href="https://www.linkedin.com/in/kaushik-kalathiya-001309150/" target="_blank" class="text-slate-400 hover:text-slate-200 transition text-lg"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/kaushik-kalathiya" target="_blank" class="text-slate-400 hover:text-slate-200 transition text-lg"><i class="fab fa-github"></i></a>
+            <a href="https://wordpress.org/users/kaushik-kalathiya/" target="_blank" class="text-slate-400 hover:text-slate-200 transition text-lg"><i class="fab fa-wordpress"></i></a>
+            <a href="mailto:kaushik.wordpress@gmail.com" target="_blank" class="text-slate-400 hover:text-slate-200 transition text-lg"><i class="fas fa-envelope"></i></a>
+        </div>
+        <div class="text-slate-400 text-sm">
+            &copy; 2026 Kaushik Kalathiya - WordPress Developer.
+        </div>
+    </div>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>

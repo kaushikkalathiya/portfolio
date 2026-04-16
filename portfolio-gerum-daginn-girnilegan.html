@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerum Daginn Girnilegan - Kaushik Kalathiya</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="pt-16">
+
+<nav class="bg-slate-900/80 backdrop-blur-md fixed w-full z-50 top-0 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+            <div class="flex items-center">
+                <a href="index.html" class="text-2xl font-bold text-blue-500 hover:text-blue-400 transition">&lt;Kaushik.Kalathiya/&gt;</a>
+            </div>
+            <div class="hidden md:block">
+                <div class="ml-10 flex items-baseline space-x-8">
+                    <a href="index.html" class="hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium transition">Home</a>
+                    <a href="about.html" class="hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium transition">About</a>
+                    <a href="portfolio.html" class="hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium transition">Portfolio</a>
+                    <a href="contact.html" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md text-sm font-medium transition">Hire Me</a>
+                </div>
+            </div>
+            <div class="-mr-2 flex md:hidden">
+                <button type="button" id="menu-btn" class="inline-flex items-center justify-center p-2 rounded-md text-slate-400 hover:text-white hover:bg-slate-800 focus:outline-none">
+                    <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="md:hidden hidden bg-slate-900 pb-3 pt-2" id="mobile-menu">
+        <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-slate-800">Home</a>
+        <a href="about.html" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-slate-800">About</a>
+        <a href="portfolio.html" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-slate-800">Portfolio</a>
+        <a href="contact.html" class="block px-3 py-2 rounded-md text-base font-medium text-blue-500 hover:bg-slate-800">Hire Me</a>
+    </div>
+</nav>
+
+<main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+    <a href="portfolio.html" class="inline-flex items-center text-blue-500 hover:text-blue-400 mb-8 transition fade-in-up">
+        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+        Back to Portfolio
+    </a>
+
+    <article class="fade-in-up">
+        <h1 class="text-4xl md:text-5xl font-bold mb-6">Gerum Daginn Girnilegan</h1>
+        <div class="flex flex-wrap gap-4 mb-10">
+            <span class="bg-slate-800 px-3 py-1 rounded text-sm text-slate-300">WordPress</span>
+            <span class="bg-slate-800 px-3 py-1 rounded text-sm text-slate-300">MySQL</span>
+            <span class="bg-slate-800 px-3 py-1 rounded text-sm text-slate-300">Theme Customization</span>
+            <span class="bg-slate-800 px-3 py-1 rounded text-sm text-slate-300">Plugin Customization</span>
+            <span class="bg-slate-800 px-3 py-1 rounded text-sm text-slate-300">Front-end Development</span>
+        </div>
+
+        <img src="images/gerumdaginngirnilegan.png" alt="Gerum Daginn Girnilegan Project Cover" class="w-full rounded-xl mb-12 shadow-2xl border border-slate-700">
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div class="md:col-span-2 space-y-8">
+                <div>
+                    <h2 class="text-2xl font-bold mb-4 text-blue-400">The Challenge</h2>
+                    <p class="text-slate-300 leading-relaxed">The client wanted a website to share a list of recipes with detailed information, focusing on recipes that are easy to cook at home for everyone.</p>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-bold mb-4 text-emerald-400">The Solution</h2>
+                    <p class="text-slate-300 leading-relaxed mb-4">I designed and integrated the UI/UX according to the client's requirements. The website was developed using WordPress with MySQL for database management.</p>
+                    <ul class="list-disc list-inside text-slate-300 space-y-2 ml-2">
+                        <li>Built a recipe-based WordPress platform with structured content for ingredients and instructions.</li>
+                        <li>Added features like Recipe of the Week and PDF downloads.</li>
+                        <li>Enhanced usability for non-technical users through intuitive UI/UX.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-bold mb-4 text-purple-400">The Result</h2>
+                    <p class="text-slate-300 leading-relaxed">The website successfully provides users with interesting and accessible recipes, enhancing culinary experiences for home cooks.</p>
+                </div>
+            </div>
+
+            <div class="bg-slate-900 border border-slate-800 p-6 rounded-xl h-max">
+                <h3 class="text-lg font-bold mb-4 border-b border-slate-700 pb-2">Project Info</h3>
+                <ul class="space-y-4 text-sm">
+                    <li>
+                        <span class="block text-slate-500 mb-1">Client</span>
+                        <span class="text-white font-medium">Gerum Daginn Girnilegan</span>
+                    </li>
+                    <li>
+                        <span class="block text-slate-500 mb-1">Role</span>
+                        <span class="text-white font-medium">Lead WordPress Developer</span>
+                    </li>
+                    <li>
+                        <span class="block text-slate-500 mb-1">Team Size</span>
+                        <span class="text-white font-medium">1</span>
+                    </li>
+                    <li class="pt-4 mt-4 border-t border-slate-800">
+                        <a href="https://gerumdaginngirnilegan.is/" class="w-full block text-center bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition">Visit Live Site</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </article>
+</main>
+
+<footer class="bg-slate-900 border-t border-slate-800 py-10">
+    <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+        <div class="flex space-x-4">
+            <a href="https://www.linkedin.com/in/kaushik-kalathiya-001309150/" target="_blank" class="text-slate-400 hover:text-slate-200 transition text-lg"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/kaushik-kalathiya" target="_blank" class="text-slate-400 hover:text-slate-200 transition text-lg"><i class="fab fa-github"></i></a>
+            <a href="https://wordpress.org/users/kaushik-kalathiya/" target="_blank" class="text-slate-400 hover:text-slate-200 transition text-lg"><i class="fab fa-wordpress"></i></a>
+            <a href="mailto:kaushik.wordpress@gmail.com" target="_blank" class="text-slate-400 hover:text-slate-200 transition text-lg"><i class="fas fa-envelope"></i></a>
+        </div>
+        <div class="text-slate-400 text-sm">
+            &copy; 2026 Kaushik Kalathiya - WordPress Developer.
+        </div>
+    </div>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
