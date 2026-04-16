@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaushik Kalathiya - WordPress Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="pt-16">
+
+<nav class="bg-slate-900/80 backdrop-blur-md fixed w-full z-50 top-0 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+            <div class="flex items-center">
+                <a href="index.html" class="text-2xl font-bold text-blue-500 hover:text-blue-400 transition">&lt;Kaushik.Kalathiya/&gt;</a>
+            </div>
+            <div class="hidden md:block">
+                <div class="ml-10 flex items-baseline space-x-8">
+                    <a href="index.html" class="hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium transition">Home</a>
+                    <a href="about.html" class="hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium transition">About</a>
+                    <a href="portfolio.html" class="hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium transition">Portfolio</a>
+                    <a href="contact.html" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md text-sm font-medium transition">Hire Me</a>
+                </div>
+            </div>
+            <div class="-mr-2 flex md:hidden">
+                <button type="button" id="menu-btn" class="inline-flex items-center justify-center p-2 rounded-md text-slate-400 hover:text-white hover:bg-slate-800 focus:outline-none">
+                    <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="md:hidden hidden bg-slate-900 pb-3 pt-2" id="mobile-menu">
+        <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-slate-800">Home</a>
+        <a href="about.html" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-slate-800">About</a>
+        <a href="portfolio.html" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-slate-800">Portfolio</a>
+        <a href="contact.html" class="block px-3 py-2 rounded-md text-base font-medium text-blue-500 hover:bg-slate-800">Hire Me</a>
+    </div>
+</nav>
+
+<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+    <div class="fade-in-up mb-12">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">About Me</h1>
+        <div class="w-20 h-1 bg-blue-500 rounded"></div>
+    </div>
+
+    <div class="flex flex-col md:flex-row gap-12">
+        <div class="md:w-1/2 fade-in-up">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1000&q=80" alt="Coding on laptop" class="rounded-xl shadow-lg border border-slate-800 hover-scale">
+        </div>
+        <div class="md:w-1/2 fade-in-up">
+            <h2 class="text-2xl font-bold mb-4">8+ Years of Crafting the Web</h2>
+            <p class="text-slate-300 mb-6 leading-relaxed">
+                I started my journey into web development 8 years ago, quickly falling in love with the flexibility and power of WordPress. Over the years, I've moved away from bloated page builders and focused entirely on custom, code-driven solutions.
+            </p>
+            <p class="text-slate-300 mb-8 leading-relaxed">
+                My expertise includes custom theme and plugin development, WooCommerce customization, API integrations, performance optimization, SEO-friendly architecture, and website security. I have strong experience working with PHP, MySQL, JavaScript, HTML, CSS, Custom Post Types, ACF, and REST APIs. I have also worked on large dynamic websites, user portals, and eCommerce platforms, focusing on clean code, reliability, and user experience. I am comfortable collaborating with teams, communicating with clients, and delivering projects on time.
+            </p>
+        </div>
+    </div>
+
+    <div class="md:w-full fade-in-up mt-16">
+        <div class="fade-in-up mb-12">
+            <h2 class="text-3xl font-bold mb-4">Tech Stack</h2>
+            <div class="w-20 h-1 bg-blue-500 rounded"></div>
+        </div>
+        <div class="flex flex-wrap gap-3">
+            <span class="bg-slate-800 border border-slate-700 px-4 py-2 rounded-full text-sm text-blue-400">WordPress</span>
+            <span class="bg-slate-800 border border-slate-700 px-4 py-2 rounded-full text-sm text-purple-400">WooCommerce</span>
+            <span class="bg-slate-800 border border-slate-700 px-4 py-2 rounded-full text-sm text-emerald-400">ACF & ACF Pro</span>
+            <span class="bg-slate-800 border border-slate-700 px-4 py-2 rounded-full text-sm text-sky-400">Custom Post Types</span>
+            <span class="bg-slate-800 border border-slate-700 px-4 py-2 rounded-full text-sm text-purple-400">Yoast SEO</span>
+            <span class="bg-slate-800 border border-slate-700 px-4 py-2 rounded-full text-sm text-pink-400">Theme Development</span>
+            <span class="bg-slate-800 border border-slate-700 px-4 py-2 rounded-full text-sm text-blue-400">Plugin Development</span>
+            <span class="bg-slate-800 border border-slate-700 px-4 py-2 rounded-full text-sm text-red-400">Payment Integration</span>
+            <span class="bg-slate-800 border border-slate-700 px-4 py-2 rounded-full text-sm text-white-400">API Development</span>
+
+            <span class="bg-slate-800 border border-slate-700 px-4 py-2 rounded-full text-sm text-indigo-400">PHP</span>
+            <span class="bg-slate-800 border border-slate-700 px-4 py-2 rounded-full text-sm text-orange-400">MySQL</span>
+            <span class="bg-slate-800 border border-slate-700 px-4 py-2 rounded-full text-sm text-red-400">HTML</span>
+            <span class="bg-slate-800 border border-slate-700 px-4 py-2 rounded-full text-sm text-pink-400">CSS</span>
+            <span class="bg-slate-800 border border-slate-700 px-4 py-2 rounded-full text-sm text-yellow-400">JavaScript</span>
+            <span class="bg-slate-800 border border-slate-700 px-4 py-2 rounded-full text-sm text-indigo-400">jQuery</span>
+            <span class="bg-slate-800 border border-slate-700 px-4 py-2 rounded-full text-sm text-yellow-400">jQuery UI</span>
+            <span class="bg-slate-800 border border-slate-700 px-4 py-2 rounded-full text-sm text-orange-400">AJAX</span>
+            <span class="bg-slate-800 border border-slate-700 px-4 py-2 rounded-full text-sm text-white">Git & GitHub</span>
+            
+        </div>
+    </div>
+
+    <div class="md:w-full fade-in-up mt-16">
+        <div class="fade-in-up mb-12">
+            <h2 class="text-3xl font-bold mb-4">Experience</h2>
+            <div class="w-20 h-1 bg-blue-500 rounded"></div>
+        </div>
+        <div class="">
+            <h3 class="text-1xl font-bold">pra-ella eCommerce agency - Remote / Contract</h3>
+            <span class="text-slate-300 leading-relaxed">Senior WordPress Developer | Jan 2026 - Mar 2026</span>
+            <ul class="list-disc list-inside text-slate-300 leading-relaxed mt-5">
+                <li>Maintained WordPress and WooCommerce websites across eCommerce, healthcare, and other domains, contributing to improve security.</li>
+                <li>Delivered high-conversion pages, increasing lead generation by 20–35% via UI/UX and SEO improvements.</li>
+                <li>Optimized WooCommerce stores to handle higher transaction volumes, improving checkout success rate and reducing cart abandonment.</li>
+                <li>Improved performance by 30–50% using caching, code splitting, and asset optimization, improving Core Web Vitals.</li>
+                <li>Built reusable components (ACF, custom plugins), reducing development time.</li>
+            </ul>
+        </div>
+        <div class="mt-12">
+            <h3 class="text-1xl font-bold">Narola Infotech Solutions LLC - Surat</h3>
+            <span class="text-slate-300 leading-relaxed">Principal Software Engineer | Jan 2018 - Dec 2025</span>
+            <ul class="list-disc list-inside text-slate-300 leading-relaxed mt-5">
+                <li>Led development and maintenance of 150+ WordPress and WooCommerce websites across multiple domains, supporting revenue growth and digital initiatives.</li>
+                <li>Designed and delivered 20+ custom WordPress themes and 30+ custom plugins, reducing dependency on third-party tools and improving long-term product stability.</li>
+                <li>Implemented WooCommerce solutions handling 10,000+ transactions, improving checkout success rates and customer experience.</li>
+                <li>Built and optimized custom MySQL database tables, reducing complex query execution time by 30-40% and ensuring scalability for growing datasets.</li>
+                <li>Integrated third-party REST APIs (including TikTok API) to enable real-time content synchronization, increasing user engagement by 20%+ on content-driven platforms.</li>
+                <li>Improved website performance by 40-60% through caching strategies, asset optimization, and clean PHP code, significantly reducing page load times and bounce rates.</li>
+                <li>Strengthened application security by implementing WordPress hardening techniques, role-based access control, and secure coding practices.</li>
+                <li>Collaborated with cross-functional teams and mentored junior developers, improving delivery timelines by 25% while maintaining high code quality.</li>
+                <li>Actively contributed to Agile ceremonies, sprint planning, and retrospectives, ensuring predictable releases and continuous improvement.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="md:w-full fade-in-up mt-16">
+        <div class="fade-in-up mb-12">
+            <h2 class="text-3xl font-bold mb-4">Education</h2>
+            <div class="w-20 h-1 bg-blue-500 rounded"></div>
+        </div>
+        <div class="">
+            <h3 class="text-1xl font-bold mb-4">MCA (Master of Computer Applications)</h3>
+            <span class="text-slate-300 mb-4 leading-relaxed">Uka Tarsadia University - Bardoli, 2016 - 2018</span>
+            <ul class="list-disc list-inside text-slate-300 leading-relaxed">
+                <li>Graduated with First Class Honors, achieving a GPA of 9.1/10.</li>
+                <li>Specialized in Web Development, Database Management, and Software Engineering.</li>
+                <li>Completed a thesis project on "Optimizing WordPress Performance through Caching and Code Refactoring."</li>
+            </ul>
+        </div>
+        <div class="mt-12">
+            <h3 class="text-1xl font-bold mb-4">BCA (Bachelor of Computer Applications)</h3>
+            <span class="text-slate-300 mb-4 leading-relaxed">Veer Narmad South Gujarat University - Surat, 2013 - 2015</span>
+            <ul class="list-disc list-inside text-slate-300 leading-relaxed">
+                <li>Graduated with First Class Honors, achieving a GPA of 8.9/10.</li>
+                <li>Specialized in Web Development, Database Management, and Software Engineering.</li>
+                <li>Completed a thesis project on "Optimizing WordPress Performance through Caching and Code Refactoring."</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="md:w-full fade-in-up mt-16">
+        <div class="fade-in-up mb-12">
+            <h2 class="text-3xl font-bold mb-4">Let's Connect</h2>
+            <div class="w-20 h-1 bg-blue-500 rounded"></div>
+        </div>
+        <p class="text-slate-300 mb-6 leading-relaxed">
+            I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision. Whether you have a question or just want to say hi, feel free to reach out. Let's build something amazing together!
+        </p>
+        <a href="contact.html" class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition shadow-lg shadow-blue-500/30">Get in Touch</a>
+    </div>
+</main>
+
+<footer class="bg-slate-900 border-t border-slate-800 py-10">
+    <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+        <div class="flex space-x-4">
+            <a href="https://www.linkedin.com/in/kaushik-kalathiya-001309150/" class="text-slate-400 hover:text-slate-200 transition text-lg"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/kaushik-kalathiya" class="text-slate-400 hover:text-slate-200 transition text-lg"><i class="fab fa-github"></i></a>
+            <a href="https://wordpress.org/users/kaushik-kalathiya/" class="text-slate-400 hover:text-slate-200 transition text-lg"><i class="fab fa-wordpress"></i></a>
+            <a href="mailto:kaushik.wordpress@gmail.com" class="text-slate-400 hover:text-slate-200 transition text-lg"><i class="fas fa-envelope"></i></a>
+        </div>
+        <div class="text-slate-400 text-sm">
+            &copy; 2026 Kaushik Kalathiya - WordPress Developer.
+        </div>
+    </div>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
