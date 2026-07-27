@@ -1,6 +1,5 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 <head>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-LRMF8R4Z5B"></script>
@@ -13,177 +12,532 @@
     <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/f556f1de67cb573bfd34f702/script.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kaushik Kalathiya - WordPress Developer</title>
+    <title>About Kaushik Kalathiya — Experience, Education & Certifications</title>
+    <meta name="description" content="Explore Kaushik Kalathiya's 8-year career history at Narola Infotech & Praxis, MCA degree from Uka Tarsadia University, and certifications from WP VIP Learn and VTC Learn.">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="pt-16">
+<body class="bg-[#0d0e15] text-gray-100 font-body relative selection:bg-rose-600 selection:text-white">
 
-<nav class="bg-slate-900/80 backdrop-blur-md fixed w-full z-50 top-0 border-b border-slate-800">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex items-center justify-between h-16">
-            <div class="flex items-center">
-                <a href="index.html" class="text-2xl font-bold text-blue-500 hover:text-blue-400 transition">&lt;Kaushik.Kalathiya/&gt;</a>
+    <!-- Ambient Subtle Torch Background -->
+    <div id="torch-canvas"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="glass-nav fixed top-0 w-full z-50 py-4 px-6 md:px-12">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <a href="index.html" class="group flex items-center gap-2.5">
+                <span class="w-3 h-3 rounded-full bg-rose-500 group-hover:scale-125 transition-transform duration-300"></span>
+                <span class="font-heading text-xl font-bold tracking-tight text-white group-hover:text-rose-400 transition-colors">
+                    Kaushik<span class="text-rose-500">.Kalathiya</span>
+                </span>
+            </a>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center gap-10">
+                <a href="index.html" class="nav-link-draw font-heading text-sm uppercase tracking-wider text-gray-400 hover:text-white transition-colors">Home</a>
+                <a href="about.html" class="nav-link-draw active font-heading text-sm uppercase tracking-wider text-white">About</a>
+                <a href="portfolio.html" class="nav-link-draw font-heading text-sm uppercase tracking-wider text-gray-400 hover:text-white transition-colors">Portfolio</a>
+                <a href="contact.html" class="nav-link-draw font-heading text-sm uppercase tracking-wider text-gray-400 hover:text-white transition-colors">Contact</a>
             </div>
-            <div class="hidden md:block">
-                <div class="ml-10 flex items-baseline space-x-8">
-                    <a href="index.html" class="hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium transition">Home</a>
-                    <a href="about.html" class="hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium transition">About</a>
-                    <a href="portfolio.html" class="hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium transition">Portfolio</a>
-                    <a href="contact.html" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md text-sm font-medium transition">Hire Me</a>
+
+            <!-- CTA & Socials -->
+            <div class="hidden md:flex items-center gap-4">
+                <a href="https://github.com/kaushikkalathiya" target="_blank" rel="noopener" class="text-gray-400 hover:text-rose-400 text-lg transition-colors p-1" title="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/kaushik-kalathiya/" target="_blank" rel="noopener" class="text-gray-400 hover:text-rose-400 text-lg transition-colors p-1" title="LinkedIn">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://profiles.wordpress.org/kaushikkalathiya/" target="_blank" rel="noopener" class="text-gray-400 hover:text-rose-400 text-lg transition-colors p-1" title="WordPress.org Profile">
+                    <i class="fa-brands fa-wordpress"></i>
+                </a>
+                <a href="contact.html" class="btn-liquid bg-rose-600/20 text-rose-300 border border-rose-500/40 px-5 py-2 text-sm hover:text-white ml-2">
+                    <span class="liquid-bg"></span>
+                    Get In Touch
+                </a>
+            </div>
+
+            <!-- Mobile Hamburger Button -->
+            <button id="menu-btn" class="md:hidden text-gray-300 hover:text-white p-2" aria-label="Toggle Navigation">
+                <i class="fa-solid fa-bars-staggered text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div id="mobile-menu" class="hidden md:hidden mt-4 pt-4 border-t border-gray-800 space-y-4">
+            <a href="index.html" class="block text-lg font-heading text-gray-300 hover:text-white">Home</a>
+            <a href="about.html" class="block text-lg font-heading text-rose-400">About</a>
+            <a href="portfolio.html" class="block text-lg font-heading text-gray-300 hover:text-white">Portfolio</a>
+            <a href="contact.html" class="block text-lg font-heading text-gray-300 hover:text-white">Contact</a>
+            <a href="contact.html" class="inline-block w-full text-center bg-rose-600 text-white font-heading font-semibold py-3 rounded-lg">Get In Touch</a>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main class="relative z-10 pt-32 pb-24">
+
+        <!-- HEADER SECTION -->
+        <section class="max-w-7xl mx-auto px-6 md:px-12 mb-20">
+            <span class="text-rose-400 font-mono text-xs uppercase tracking-widest block mb-3">// Technical Profile & Qualifications</span>
+            <h1 class="font-heading text-4xl sm:text-6xl font-extrabold text-white tracking-tight leading-tight max-w-4xl">
+                ABOUT KAUSHIK KALATHIYA — <span class="text-transparent bg-clip-text bg-gradient-to-r from-rose-400 via-amber-300 to-rose-500">EXPERIENCE & CREDENTIALS.</span>
+            </h1>
+        </section>
+
+        <!-- MODULE 1: BIOGRAPHY & PROFILE CARD -->
+        <section class="max-w-7xl mx-auto px-6 md:px-12 mb-32">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+                
+                <!-- Left Profile Visual Card -->
+                <div class="lg:col-span-5 reveal-left-init">
+                    <div class="card-premium magnetic-card p-5 border-rose-500/20">
+                        <div class="relative overflow-hidden rounded-xl aspect-[4/5] mb-5">
+                            <img src="images/kaushik-512.png" alt="Kaushik Kalathiya Developer Portrait" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-gradient-to-t from-[#0d0e15] via-transparent to-transparent opacity-60"></div>
+                        </div>
+                        <div class="space-y-3 p-1">
+                            <h3 class="font-heading text-xl font-bold text-white">Kaushik Kalathiya</h3>
+                            <p class="text-xs font-mono text-rose-400">Technical Support Specialist | WordPress Specialist</p>
+                            <p class="text-xs text-gray-400 flex items-center gap-2">
+                                <i class="fa-solid fa-location-dot text-rose-400"></i> Surat, Gujarat, India
+                            </p>
+                            <div class="flex items-center gap-3 pt-2 text-sm text-gray-400 border-t border-gray-800">
+                                <a href="https://github.com/kaushikkalathiya" target="_blank" class="hover:text-rose-400 transition-colors"><i class="fa-brands fa-github"></i> GitHub</a>
+                                <span>•</span>
+                                <a href="https://www.linkedin.com/in/kaushik-kalathiya/" target="_blank" class="hover:text-rose-400 transition-colors"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Detailed About Copy -->
+                <div class="lg:col-span-7 space-y-6 reveal-right-init text-gray-300 text-base leading-relaxed">
+                    <h2 class="font-heading text-2xl sm:text-3xl font-bold text-white tracking-tight">
+                        8+ Years of Technical Support, Development & Troubleshooting
+                    </h2>
+
+                    <p>
+                        I am a Technical Support Specialist and WordPress Developer with around 8 years of experience providing technical support, troubleshooting, and developing WordPress and WooCommerce websites. I specialize in diagnosing and resolving complex website issues, including plugin and theme conflicts, performance bottlenecks, security vulnerabilities, server-related problems, and API integration challenges.
+                    </p>
+
+                    <p>
+                        My technical expertise includes WordPress, WooCommerce, PHP, MySQL, JavaScript, HTML, CSS, Custom Post Types, Advanced Custom Fields (ACF), REST APIs, and third-party integrations. I have extensive experience with custom theme and plugin development, website migrations, performance optimization, SEO best practices, and maintaining secure, scalable, and high-performing websites.
+                    </p>
+
+                    <p>
+                        I am skilled at investigating technical issues, identifying root causes, and delivering reliable solutions while minimizing downtime. I enjoy working closely with customers, clients, and cross-functional teams to provide timely support, clear communication, and an excellent user experience. My focus is on ensuring website stability, resolving issues efficiently, and helping users achieve the best possible outcomes with their WordPress websites.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- MODULE 2: WORK EXPERIENCE MODULE (EXACT DATES & ROLES) -->
+        <section class="max-w-7xl mx-auto px-6 md:px-12 mb-36">
+            <div class="text-center max-w-3xl mx-auto mb-20">
+                <span class="text-rose-400 font-mono text-xs uppercase tracking-widest block mb-2">// Experience History</span>
+                <h2 class="font-heading text-3xl sm:text-5xl font-bold text-white tracking-tight">
+                    Professional Work History
+                </h2>
+            </div>
+
+            <div class="space-y-12 max-w-4xl mx-auto">
+                
+                <!-- Company 1: Praxis -->
+                <div class="card-premium p-8 border-rose-500/30 reveal-init">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6 pb-6 border-b border-gray-800">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-rose-500/10 text-rose-400 flex items-center justify-center font-bold text-xl">
+                                P
+                            </div>
+                            <div>
+                                <h3 class="font-heading text-xl font-bold text-white">Senior WordPress Developer</h3>
+                                <p class="text-xs font-mono text-rose-400">praxis — Shopify Platinum Partner</p>
+                            </div>
+                        </div>
+                        <div class="text-left sm:text-right">
+                            <span class="px-3 py-1 rounded-full bg-rose-500/10 text-rose-400 text-xs font-mono">Jan 2026 – Mar 2026 • 3 mos</span>
+                            <p class="text-xs text-gray-500 mt-1 font-mono">Surat, India</p>
+                        </div>
+                    </div>
+                    <p class="text-sm text-gray-300 leading-relaxed">
+                        Providing senior-level WordPress theme customization, performance engineering, e-commerce integrations, and technical support.
+                    </p>
+                </div>
+
+                <!-- Company 2: Narola Infotech (Perfect Vertical Line Alignment) -->
+                <div class="card-premium p-8 border-gray-800 reveal-init">
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8 pb-6 border-b border-gray-800">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center font-bold text-xl">
+                                N
+                            </div>
+                            <div>
+                                <h3 class="font-heading text-2xl font-bold text-white">Narola Infotech</h3>
+                                <p class="text-xs font-mono text-cyan-400">8 Years Total Tenure • Surat, Gujarat, India</p>
+                            </div>
+                        </div>
+                        <span class="px-3 py-1 rounded-full bg-cyan-500/10 text-cyan-400 text-xs font-mono w-fit">2018 – 2025</span>
+                    </div>
+
+                    <!-- Roles Growth Progression with Pixel-Perfect Vertical Line -->
+                    <div class="timeline-vertical-container pl-8 space-y-8">
+                        <div class="timeline-line"></div>
+
+                        <!-- Role 1: Principal -->
+                        <div class="relative">
+                            <div class="absolute -left-[29px] top-1 w-3.5 h-3.5 rounded-full bg-[#0d0e15] border-2 border-rose-500 z-10 flex items-center justify-center">
+                                <div class="w-1 h-1 rounded-full bg-rose-400"></div>
+                            </div>
+                            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+                                <h4 class="font-heading text-lg font-bold text-white">Principal Software Engineer</h4>
+                                <span class="text-xs font-mono text-rose-400">Jul 2022 – Dec 2025 • 3 yrs 6 mos</span>
+                            </div>
+                            <p class="text-xs text-gray-400 mt-1">Led architectural decisions for client WordPress applications, resolved high-priority technical issues, and mentored engineering teams.</p>
+                        </div>
+
+                        <!-- Role 2: Senior Consultant -->
+                        <div class="relative">
+                            <div class="absolute -left-[29px] top-1 w-3.5 h-3.5 rounded-full bg-[#0d0e15] border-2 border-cyan-400 z-10 flex items-center justify-center">
+                                <div class="w-1 h-1 rounded-full bg-cyan-300"></div>
+                            </div>
+                            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+                                <h4 class="font-heading text-lg font-bold text-white">Senior Consultant</h4>
+                                <span class="text-xs font-mono text-cyan-400">Jul 2021 – Jun 2022 • 1 yr</span>
+                            </div>
+                            <p class="text-xs text-gray-400 mt-1">Consulted on complex WooCommerce integrations, database query optimizations, and plugin conflict resolutions.</p>
+                        </div>
+
+                        <!-- Role 3: Senior Software Engineer -->
+                        <div class="relative">
+                            <div class="absolute -left-[29px] top-1 w-3.5 h-3.5 rounded-full bg-[#0d0e15] border-2 border-amber-400 z-10 flex items-center justify-center">
+                                <div class="w-1 h-1 rounded-full bg-amber-300"></div>
+                            </div>
+                            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+                                <h4 class="font-heading text-lg font-bold text-white">Senior Software Engineer</h4>
+                                <span class="text-xs font-mono text-amber-400">Jul 2019 – Jun 2021 • 2 yrs</span>
+                            </div>
+                            <p class="text-xs text-gray-400 mt-1">Developed custom themes, ACF Pro Flexible Content layouts, and REST API webhooks for international clients.</p>
+                        </div>
+
+                        <!-- Role 4: Software Engineer -->
+                        <div class="relative">
+                            <div class="absolute -left-[29px] top-1 w-3.5 h-3.5 rounded-full bg-[#0d0e15] border-2 border-gray-500 z-10 flex items-center justify-center">
+                                <div class="w-1 h-1 rounded-full bg-gray-400"></div>
+                            </div>
+                            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+                                <h4 class="font-heading text-base font-bold text-gray-200">Software Engineer</h4>
+                                <span class="text-xs font-mono text-gray-400">Jul 2018 – Jun 2019 • 1 yr</span>
+                            </div>
+                            <p class="text-xs text-gray-400 mt-1">Built responsive frontend interfaces and custom WordPress post type structures.</p>
+                        </div>
+
+                        <!-- Role 5: Trainee -->
+                        <div class="relative">
+                            <div class="absolute -left-[29px] top-1 w-3.5 h-3.5 rounded-full bg-[#0d0e15] border-2 border-gray-600 z-10 flex items-center justify-center">
+                                <div class="w-1 h-1 rounded-full bg-gray-500"></div>
+                            </div>
+                            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+                                <h4 class="font-heading text-base font-bold text-gray-300">Trainee Software Engineer</h4>
+                                <span class="text-xs font-mono text-gray-500">Jan 2018 – Jun 2018 • 6 mos</span>
+                            </div>
+                            <p class="text-xs text-gray-400 mt-1">Mastered WordPress core standards, PHP OOP fundamentals, and MySQL database administration.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- MODULE 3: EDUCATION MODULE (EXACT DATES & INSTITUTIONS) -->
+        <section class="max-w-7xl mx-auto px-6 md:px-12 mb-36">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-rose-400 font-mono text-xs uppercase tracking-widest block mb-2">// Academic Background</span>
+                <h2 class="font-heading text-3xl sm:text-5xl font-bold text-white tracking-tight">
+                    Education & Degrees
+                </h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <!-- University 1 -->
+                <div class="card-premium p-8 border-gray-800 hover:border-rose-500/40">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-12 h-12 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-heading text-xl font-bold text-white">Uka Tarsadia University</h3>
+                            <span class="text-xs font-mono text-rose-400">2015 – 2017</span>
+                        </div>
+                    </div>
+                    <p class="font-heading font-semibold text-rose-300 text-sm mb-2">
+                        Master of Computer Applications (MCA)
+                    </p>
+                    <p class="text-xs font-mono text-gray-400">
+                        Computer Science and Information Technology
+                    </p>
+                </div>
+
+                <!-- University 2 -->
+                <div class="card-premium p-8 border-gray-800 hover:border-rose-500/40">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-university"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-heading text-xl font-bold text-white">Veer Narmad South Gujarat University</h3>
+                            <span class="text-xs font-mono text-amber-400">2012 – 2015</span>
+                        </div>
+                    </div>
+                    <p class="font-heading font-semibold text-gray-200 text-sm mb-2">
+                        Bachelor's Degree Education
+                    </p>
+                    <p class="text-xs font-mono text-gray-400">
+                        Surat, Gujarat, India
+                    </p>
                 </div>
             </div>
-            <div class="-mr-2 flex md:hidden">
-                <button type="button" id="menu-btn" class="inline-flex items-center justify-center p-2 rounded-md text-slate-400 hover:text-white hover:bg-slate-800 focus:outline-none">
-                    <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                    </svg>
-                </button>
+        </section>
+
+        <!-- MODULE 4: LICENSES & CERTIFICATIONS MODULE (WITH WP VIP LEARN) -->
+        <section class="max-w-7xl mx-auto px-6 md:px-12 mb-36">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-rose-400 font-mono text-xs uppercase tracking-widest block mb-2">// Industry Credentials</span>
+                <h2 class="font-heading text-3xl sm:text-5xl font-bold text-white tracking-tight">
+                    Licenses & Certifications
+                </h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+                
+                <!-- Cert 1 -->
+                <div class="card-premium p-6 border-gray-800 hover:border-rose-500/40">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="px-2.5 py-1 rounded bg-rose-500/10 text-rose-400 text-xs font-mono">Issued Jul 2020</span>
+                        <i class="fa-solid fa-award text-rose-400 text-xl"></i>
+                    </div>
+                    <h3 class="font-heading text-base font-bold text-white mb-1">Advanced WordPress Debugging Certificate</h3>
+                    <p class="text-xs text-gray-400 font-mono">Issuer: VTC Learn</p>
+                    <p class="text-[11px] text-gray-500 font-mono mt-3">ID: VTC-vwp-warn-cert-1184-4720</p>
+                </div>
+
+                <!-- Cert 2 -->
+                <div class="card-premium p-6 border-gray-800 hover:border-rose-500/40">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="px-2.5 py-1 rounded bg-cyan-500/10 text-cyan-400 text-xs font-mono">Issued May 2020</span>
+                        <i class="fa-solid fa-award text-cyan-400 text-xl"></i>
+                    </div>
+                    <h3 class="font-heading text-base font-bold text-white mb-1">Development, Build, Test, & Deployment</h3>
+                    <p class="text-xs text-gray-400 font-mono">Issuer: VTC Learn</p>
+                    <p class="text-[11px] text-gray-500 font-mono mt-3">ID: VTC-vwp-learn-cert-1248-4720</p>
+                </div>
+
+                <!-- Cert 3: WP VIP Learn PHP -->
+                <div class="card-premium p-6 border-gray-800 hover:border-amber-500/40">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="px-2.5 py-1 rounded bg-amber-500/10 text-amber-400 text-xs font-mono">WP VIP Learn</span>
+                        <i class="fa-solid fa-certificate text-amber-400 text-xl"></i>
+                    </div>
+                    <h3 class="font-heading text-base font-bold text-white mb-1">PHP & MySQL Architecture Certificate</h3>
+                    <p class="text-xs text-gray-400 font-mono">WP VIP Learn Certificate</p>
+                </div>
+
+                <!-- Cert 4: WP VIP Learn Java -->
+                <div class="card-premium p-6 border-gray-800 hover:border-amber-500/40">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="px-2.5 py-1 rounded bg-amber-500/10 text-amber-400 text-xs font-mono">WP VIP Learn</span>
+                        <i class="fa-solid fa-certificate text-amber-400 text-xl"></i>
+                    </div>
+                    <h3 class="font-heading text-base font-bold text-white mb-1">Enterprise Development Certificate</h3>
+                    <p class="text-xs text-gray-400 font-mono">WP VIP Learn Certificate</p>
+                </div>
+
+                <!-- Cert 5: Big Data 101 -->
+                <div class="card-premium p-6 border-gray-800 hover:border-purple-500/40">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="px-2.5 py-1 rounded bg-purple-500/10 text-purple-400 text-xs font-mono">Big Data Univ</span>
+                        <i class="fa-solid fa-database text-purple-400 text-xl"></i>
+                    </div>
+                    <h3 class="font-heading text-base font-bold text-white mb-1">Certificate of Completion in Big Data 101</h3>
+                    <p class="text-xs text-gray-400 font-mono">Big Data University</p>
+                </div>
+
+                <!-- Cert 6: Data Science 101 -->
+                <div class="card-premium p-6 border-gray-800 hover:border-purple-500/40">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="px-2.5 py-1 rounded bg-purple-500/10 text-purple-400 text-xs font-mono">Big Data Univ</span>
+                        <i class="fa-solid fa-chart-pie text-purple-400 text-xl"></i>
+                    </div>
+                    <h3 class="font-heading text-base font-bold text-white mb-1">Certificate of Completion in Data Science 101</h3>
+                    <p class="text-xs text-gray-400 font-mono">Big Data University</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- MODULE 5: TECHNICAL CAPABILITIES SECTION (9 CARDS GRID) -->
+        <section class="max-w-7xl mx-auto px-6 md:px-12 mb-36">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-rose-400 font-mono text-xs uppercase tracking-widest block mb-2">// Technical Expertise</span>
+                <h2 class="font-heading text-3xl sm:text-5xl font-bold text-white tracking-tight">
+                    Technical Capabilities
+                </h2>
+                <p class="text-gray-400 mt-4 text-base">
+                    Comprehensive WordPress engineering, custom plugin development, performance tuning, and technical support.
+                </p>
+            </div>
+
+            <!-- 9 CARDS GRID -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Card 1 -->
+                <div class="card-premium p-8 border-gray-800 hover:border-rose-500/40">
+                    <div class="w-12 h-12 rounded-xl bg-rose-500/10 text-rose-400 flex items-center justify-center text-xl mb-6">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold text-white mb-3">Custom Theme Development</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Pixel-perfect, performance-optimized custom themes built from scratch to match your specific design requirements.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="card-premium p-8 border-gray-800 hover:border-rose-500/40">
+                    <div class="w-12 h-12 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-xl mb-6">
+                        <i class="fa-solid fa-database"></i>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold text-white mb-3">ACF Integration</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Expert-level ACF Flexible Content integration, providing clients with modular editing experiences.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="card-premium p-8 border-gray-800 hover:border-rose-500/40">
+                    <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-xl mb-6">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold text-white mb-3">Performance & SEO</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Auditing and optimizing slow WordPress sites. Implementing caching, image compression, and Core Web Vitals fixes.
+                    </p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="card-premium p-8 border-gray-800 hover:border-rose-500/40">
+                    <div class="w-12 h-12 rounded-xl bg-rose-500/10 text-rose-400 flex items-center justify-center text-xl mb-6">
+                        <i class="fa-solid fa-puzzle-piece"></i>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold text-white mb-3">Custom Plugin Development</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Creating custom plugins to extend WordPress functionality and meet specific client needs.
+                    </p>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="card-premium p-8 border-gray-800 hover:border-rose-500/40">
+                    <div class="w-12 h-12 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-xl mb-6">
+                        <i class="fa-solid fa-sliders"></i>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold text-white mb-3">SCF Integration</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Expert in Secure/Structured Custom Fields (SCF) for Flexible Content integration, providing clients with modular editing experiences.
+                    </p>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="card-premium p-8 border-gray-800 hover:border-rose-500/40">
+                    <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-xl mb-6">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold text-white mb-3">Customization</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Tailoring WordPress sites to meet specific client requirements and branding guidelines.
+                    </p>
+                </div>
+
+                <!-- Card 7 -->
+                <div class="card-premium p-8 border-gray-800 hover:border-rose-500/40">
+                    <div class="w-12 h-12 rounded-xl bg-rose-500/10 text-rose-400 flex items-center justify-center text-xl mb-6">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold text-white mb-3">WooCommerce Development</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Customizing checkout flows, product page layouts, payment gateways, and e-commerce store extensions.
+                    </p>
+                </div>
+
+                <!-- Card 8 -->
+                <div class="card-premium p-8 border-gray-800 hover:border-rose-500/40">
+                    <div class="w-12 h-12 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-xl mb-6">
+                        <i class="fa-solid fa-bug-slash"></i>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold text-white mb-3">Technical Support & Debugging</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Diagnosing complex site issues, plugin/theme conflicts, security vulnerabilities, and server errors.
+                    </p>
+                </div>
+
+                <!-- Card 9 -->
+                <div class="card-premium p-8 border-gray-800 hover:border-rose-500/40">
+                    <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-xl mb-6">
+                        <i class="fa-solid fa-network-wired"></i>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold text-white mb-3">API & Webhook Integrations</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Integrating third-party REST APIs, payment gateways, and external webhooks with custom WordPress hooks.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CTA SECTION -->
+        <section class="max-w-7xl mx-auto px-6 md:px-12">
+            <div class="card-premium p-10 md:p-14 border-rose-500/30 text-center relative overflow-hidden bg-gradient-to-br from-[#141824] to-[#0d0e15]">
+                <h2 class="font-heading text-3xl sm:text-4xl font-extrabold text-white mb-6">
+                    Ready to Work Together?
+                </h2>
+                <p class="text-gray-300 text-base max-w-xl mx-auto mb-8">
+                    Let me put my 8+ years of technical support and WordPress engineering experience to work on your project.
+                </p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="contact.html" class="btn-liquid bg-rose-600 text-white px-8 py-3.5 text-base">
+                        <span class="liquid-bg"></span>
+                        Contact Kaushik
+                    </a>
+                    <a href="https://www.linkedin.com/in/kaushik-kalathiya/" target="_blank" class="card-premium px-7 py-3.5 font-heading text-sm uppercase tracking-wider font-semibold text-gray-300 hover:text-white border-gray-800">
+                        <i class="fa-brands fa-linkedin mr-2 text-rose-400"></i> LinkedIn Profile
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-gray-800/80 bg-[#090b10] py-12 px-6 md:px-12 relative z-10 text-xs text-gray-400">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+            <div>
+                <p class="font-heading text-gray-200 text-sm font-bold">Kaushik Kalathiya — Technical Support Specialist</p>
+                <p class="mt-1 font-mono text-gray-400">MCA Graduate • Former Principal Software Engineer</p>
+            </div>
+            <div class="flex items-center gap-6 font-heading text-gray-400">
+                <a href="index.html" class="hover:text-rose-400 transition-colors">Home</a>
+                <a href="about.html" class="hover:text-rose-400 transition-colors">About</a>
+                <a href="portfolio.html" class="hover:text-rose-400 transition-colors">Portfolio</a>
+                <a href="contact.html" class="hover:text-rose-400 transition-colors">Contact</a>
+            </div>
+            <div class="flex items-center gap-4 text-base">
+                <a href="https://github.com/kaushikkalathiya" target="_blank" class="hover:text-rose-400 transition-colors"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/kaushik-kalathiya/" target="_blank" class="hover:text-rose-400 transition-colors"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://profiles.wordpress.org/kaushikkalathiya/" target="_blank" class="hover:text-rose-400 transition-colors"><i class="fa-brands fa-wordpress"></i></a>
             </div>
         </div>
-    </div>
-    <div class="md:hidden hidden bg-slate-900 pb-3 pt-2" id="mobile-menu">
-        <a href="index.html" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-slate-800">Home</a>
-        <a href="about.html" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-slate-800">About</a>
-        <a href="portfolio.html" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-slate-800">Portfolio</a>
-        <a href="contact.html" class="block px-3 py-2 rounded-md text-base font-medium text-blue-500 hover:bg-slate-800">Hire Me</a>
-    </div>
-</nav>
+    </footer>
 
-<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-    <div class="fade-in-up mb-12">
-        <h1 class="text-4xl md:text-5xl font-bold mb-4">About Me</h1>
-        <div class="w-20 h-1 bg-blue-500 rounded"></div>
-    </div>
-
-    <div class="flex flex-col md:flex-row gap-12">
-        <div class="md:w-1/2 fade-in-up">
-            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1000&q=80" alt="Coding on laptop" class="rounded-xl shadow-lg border border-slate-800 hover-scale">
-        </div>
-        <div class="md:w-1/2 fade-in-up">
-            <h2 class="text-2xl font-bold mb-4">8+ Years of Crafting the Web</h2>
-            <p class="text-slate-300 mb-6 leading-relaxed">
-                I started my journey into web development 8 years ago, quickly falling in love with the flexibility and power of WordPress. Over the years, I've moved away from bloated page builders and focused entirely on custom, code-driven solutions.
-            </p>
-            <p class="text-slate-300 mb-8 leading-relaxed">
-                My expertise includes custom theme and plugin development, WooCommerce customization, API integrations, performance optimization, SEO-friendly architecture, and website security. I have strong experience working with PHP, MySQL, JavaScript, HTML, CSS, Custom Post Types, ACF, and REST APIs. I have also worked on large dynamic websites, user portals, and eCommerce platforms, focusing on clean code, reliability, and user experience. I am comfortable collaborating with teams, communicating with clients, and delivering projects on time.
-            </p>
-        </div>
-    </div>
-
-    <div class="md:w-full fade-in-up mt-16">
-        <div class="fade-in-up mb-12">
-            <h2 class="text-3xl font-bold mb-4">Tech Stack</h2>
-            <div class="w-20 h-1 bg-blue-500 rounded"></div>
-        </div>
-        <div class="flex flex-wrap gap-3">
-            <span class="bg-slate-800 border border-slate-700 px-4 py-2 rounded-full text-sm text-blue-400">WordPress</span>
-            <span class="bg-slate-800 border border-slate-700 px-4 py-2 rounded-full text-sm text-purple-400">WooCommerce</span>
-            <span class="bg-slate-800 border border-slate-700 px-4 py-2 rounded-full text-sm text-emerald-400">ACF & ACF Pro</span>
-            <span class="bg-slate-800 border border-slate-700 px-4 py-2 rounded-full text-sm text-sky-400">Custom Post Types</span>
-            <span class="bg-slate-800 border border-slate-700 px-4 py-2 rounded-full text-sm text-purple-400">Yoast SEO</span>
-            <span class="bg-slate-800 border border-slate-700 px-4 py-2 rounded-full text-sm text-pink-400">Theme Development</span>
-            <span class="bg-slate-800 border border-slate-700 px-4 py-2 rounded-full text-sm text-blue-400">Plugin Development</span>
-            <span class="bg-slate-800 border border-slate-700 px-4 py-2 rounded-full text-sm text-red-400">Payment Integration</span>
-            <span class="bg-slate-800 border border-slate-700 px-4 py-2 rounded-full text-sm text-white-400">API Development</span>
-
-            <span class="bg-slate-800 border border-slate-700 px-4 py-2 rounded-full text-sm text-indigo-400">PHP</span>
-            <span class="bg-slate-800 border border-slate-700 px-4 py-2 rounded-full text-sm text-orange-400">MySQL</span>
-            <span class="bg-slate-800 border border-slate-700 px-4 py-2 rounded-full text-sm text-red-400">HTML</span>
-            <span class="bg-slate-800 border border-slate-700 px-4 py-2 rounded-full text-sm text-pink-400">CSS</span>
-            <span class="bg-slate-800 border border-slate-700 px-4 py-2 rounded-full text-sm text-yellow-400">JavaScript</span>
-            <span class="bg-slate-800 border border-slate-700 px-4 py-2 rounded-full text-sm text-indigo-400">jQuery</span>
-            <span class="bg-slate-800 border border-slate-700 px-4 py-2 rounded-full text-sm text-yellow-400">jQuery UI</span>
-            <span class="bg-slate-800 border border-slate-700 px-4 py-2 rounded-full text-sm text-orange-400">AJAX</span>
-            <span class="bg-slate-800 border border-slate-700 px-4 py-2 rounded-full text-sm text-white">Git & GitHub</span>
-            
-        </div>
-    </div>
-
-    <div class="md:w-full fade-in-up mt-16">
-        <div class="fade-in-up mb-12">
-            <h2 class="text-3xl font-bold mb-4">Experience</h2>
-            <div class="w-20 h-1 bg-blue-500 rounded"></div>
-        </div>
-        <div class="">
-            <h3 class="text-1xl font-bold">pra-ella eCommerce agency - Remote / Contract</h3>
-            <span class="text-slate-300 leading-relaxed">Senior WordPress Developer | Jan 2026 - Mar 2026</span>
-            <ul class="list-disc list-inside text-slate-300 leading-relaxed mt-5">
-                <li>Maintained WordPress and WooCommerce websites across eCommerce, healthcare, and other domains, contributing to improve security.</li>
-                <li>Delivered high-conversion pages, increasing lead generation by 20–35% via UI/UX and SEO improvements.</li>
-                <li>Optimized WooCommerce stores to handle higher transaction volumes, improving checkout success rate and reducing cart abandonment.</li>
-                <li>Improved performance by 30–50% using caching, code splitting, and asset optimization, improving Core Web Vitals.</li>
-                <li>Built reusable components (ACF, custom plugins), reducing development time.</li>
-            </ul>
-        </div>
-        <div class="mt-12">
-            <h3 class="text-1xl font-bold">Narola Infotech Solutions LLC - Surat</h3>
-            <span class="text-slate-300 leading-relaxed">Principal Software Engineer | Jan 2018 - Dec 2025</span>
-            <ul class="list-disc list-inside text-slate-300 leading-relaxed mt-5">
-                <li>Led development and maintenance of 150+ WordPress and WooCommerce websites across multiple domains, supporting revenue growth and digital initiatives.</li>
-                <li>Designed and delivered 20+ custom WordPress themes and 30+ custom plugins, reducing dependency on third-party tools and improving long-term product stability.</li>
-                <li>Implemented WooCommerce solutions handling 10,000+ transactions, improving checkout success rates and customer experience.</li>
-                <li>Built and optimized custom MySQL database tables, reducing complex query execution time by 30-40% and ensuring scalability for growing datasets.</li>
-                <li>Integrated third-party REST APIs (including TikTok API) to enable real-time content synchronization, increasing user engagement by 20%+ on content-driven platforms.</li>
-                <li>Improved website performance by 40-60% through caching strategies, asset optimization, and clean PHP code, significantly reducing page load times and bounce rates.</li>
-                <li>Strengthened application security by implementing WordPress hardening techniques, role-based access control, and secure coding practices.</li>
-                <li>Collaborated with cross-functional teams and mentored junior developers, improving delivery timelines by 25% while maintaining high code quality.</li>
-                <li>Actively contributed to Agile ceremonies, sprint planning, and retrospectives, ensuring predictable releases and continuous improvement.</li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="md:w-full fade-in-up mt-16">
-        <div class="fade-in-up mb-12">
-            <h2 class="text-3xl font-bold mb-4">Education</h2>
-            <div class="w-20 h-1 bg-blue-500 rounded"></div>
-        </div>
-        <div class="">
-            <h3 class="text-1xl font-bold mb-4">MCA (Master of Computer Applications)</h3>
-            <span class="text-slate-300 mb-4 leading-relaxed">Uka Tarsadia University - Bardoli, 2016 - 2018</span>
-            <ul class="list-disc list-inside text-slate-300 leading-relaxed">
-                <li>Graduated with First Class Honors, achieving a GPA of 9.1/10.</li>
-                <li>Specialized in Web Development, Database Management, and Software Engineering.</li>
-                <li>Completed a thesis project on "Optimizing WordPress Performance through Caching and Code Refactoring."</li>
-            </ul>
-        </div>
-        <div class="mt-12">
-            <h3 class="text-1xl font-bold mb-4">BCA (Bachelor of Computer Applications)</h3>
-            <span class="text-slate-300 mb-4 leading-relaxed">Veer Narmad South Gujarat University - Surat, 2013 - 2015</span>
-            <ul class="list-disc list-inside text-slate-300 leading-relaxed">
-                <li>Graduated with First Class Honors, achieving a GPA of 8.9/10.</li>
-                <li>Specialized in Web Development, Database Management, and Software Engineering.</li>
-                <li>Completed a thesis project on "Optimizing WordPress Performance through Caching and Code Refactoring."</li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="md:w-full fade-in-up mt-16">
-        <div class="fade-in-up mb-12">
-            <h2 class="text-3xl font-bold mb-4">Let's Connect</h2>
-            <div class="w-20 h-1 bg-blue-500 rounded"></div>
-        </div>
-        <p class="text-slate-300 mb-6 leading-relaxed">
-            I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision. Whether you have a question or just want to say hi, feel free to reach out. Let's build something amazing together!
-        </p>
-        <a href="contact.html" class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition shadow-lg shadow-blue-500/30">Get in Touch</a>
-    </div>
-</main>
-
-<footer class="bg-slate-900 border-t border-slate-800 py-10">
-    <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
-        <div class="flex space-x-4">
-            <a href="https://www.linkedin.com/in/kaushik-kalathiya-001309150/" target="_blank" class="text-slate-400 hover:text-slate-200 transition text-lg"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/kaushikkalathiya" target="_blank" class="text-slate-400 hover:text-slate-200 transition text-lg"><i class="fab fa-github"></i></a>
-            <a href="https://profiles.wordpress.org/kaushik1111/" target="_blank" class="text-slate-400 hover:text-slate-200 transition text-lg"><i class="fab fa-wordpress"></i></a>
-            <a href="mailto:kaushikvkalathiya@gmail.com" target="_blank" class="text-slate-400 hover:text-slate-200 transition text-lg"><i class="fas fa-envelope"></i></a>
-        </div>
-        <div class="text-slate-400 text-sm">
-            &copy; 2026 Kaushik Kalathiya - WordPress Developer.
-        </div>
-    </div>
-</footer>
-<script src="js/script.js"></script>
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
 </body>
 </html>
