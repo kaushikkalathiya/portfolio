@@ -1,3 +1,4 @@
-# portfolio
+# Kaushik Kalathiya - Portfolio
 
-My Portfolio as WordPress Developer
+Portfolio - WordPress Developer
+URL : https://kaushikkalathiya.github.io/portfolio/

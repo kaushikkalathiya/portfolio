@@ -1,6 +1,5 @@
 User-agent: *
 Allow: /
-Disallow: /portfolio-single.html
 
 User-agent: Googlebot
 Allow: /
