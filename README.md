@@ -1,2 +1,3 @@
 # portfolio
-WordPress Developer Portfolio
+
+My Portfolio as WordPress Developer
